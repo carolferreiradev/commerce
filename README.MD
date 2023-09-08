@@ -3,6 +3,8 @@
 
 Sistema contendo backend e frontend, com a finalidade de ler um arquivo CSV e através dele atualizar o preço dos produtos.
 
+![cover](https://github.com/carolferreiradev/commerce/blob/main/doc/example.png)
+
 ## Como executar?
 Será necessário ter o NodeJs e o MySql5 instalados em sua máquina.
 
@@ -39,6 +41,4 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 
 `VITE_API`: Endereço onde o backend está rodando
 
-
-![cover](https://github.com/carolferreiradev/commerce/blob/main/doc/example.png)
 

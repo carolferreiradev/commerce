@@ -1,0 +1,117 @@
+.container {
+  color: var(--primary);
+  background: var(--white);
+}
+
+.container .page__content {
+  padding: 24px 16px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container .page__content .page__content__file__select {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container .page__content .page__content__file__select label {
+  border: 1px solid var(--tertiary);
+  width: fit-content;
+  background: var(--secondary);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .page__content .page__content__file {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 16px;
+
+  border-bottom: 1px dashed var(--primary);
+}
+
+.container .page__content .page__content__file button{
+  width: fit-content;
+  border: 1px solid var(--primary);
+  background-color: var(--white);
+}
+
+.container .page__content .page__content__buttons {
+  display: flex;
+  align-items: center;
+  margin-top:  16px;;
+}
+
+.container .page__content button {
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: filter 0.2s;
+}
+
+.container .page__content button:hover {
+  filter: brightness(0.8);
+}
+
+.container .page__content button:disabled {
+  cursor: not-allowed;
+}
+
+.container .page__content button.page__content__validation__button {
+  background: var(--primary);
+  color: var(--white);
+  margin-right: 8px;
+}
+
+.container .page__content button.page__content__update__button {
+  background: var(--tertiary);
+  color: var(--white);
+}
+
+.container .page__content .page__content__warning {
+  border: 1px solid var(--primary);
+  border-style: dashed;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin: 16px 0 24px 0;
+  width: fit-content;
+}
+
+
+.page__content table {
+  margin-top: 24px;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #1E2044;
+  border-style: solid;
+  color: #000000;
+}
+
+.page__content table td {
+  border-width: 2px;
+  border-color: #1E2044;
+  border-style: solid;
+  padding: 5px;
+}
+
+.page__content table th {
+  border-width: 2px;
+  border-color: #1E2044;
+  border-style: solid;
+  padding: 5px;
+}
+
+.page__content table thead {
+  background-color: #1E2044;
+  color: var(--white);
+}

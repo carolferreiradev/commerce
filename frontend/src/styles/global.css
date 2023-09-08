@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary:#1e2044;
+  --secondary: #e8f3d8;
+  --tertiary: #0dab77;
+  --white:#ffffff;
+  --gray--600:#4b5563;
+  --gray--300:#d1d5db;
+}
+
+@media(max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media(max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+html, button, input{
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+

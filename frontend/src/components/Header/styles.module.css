@@ -1,0 +1,15 @@
+.header {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.header .header__content {
+  padding: 24px 16px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header .header__content h2 {
+  font-size: 1.4rem;
+}

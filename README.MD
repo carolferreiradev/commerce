@@ -40,5 +40,5 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 `VITE_API`: Endereço onde o backend está rodando
 
 
-![cover]()
+![cover](https://github.com/carolferreiradev/commerce/blob/main/doc/example.png)
 

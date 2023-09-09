@@ -19,8 +19,7 @@ class UpdatePrice {
 				productsInvalid
 			};
 		}
-		// O preço de custo dos pacotes também deve ser atualizado como a soma dos custos dos
-		// seus componentes
+
 		await Promise.all(products.map(async (item) => {
 			await this.productPriceSingle(item.code, Number(item.price));
 		}));

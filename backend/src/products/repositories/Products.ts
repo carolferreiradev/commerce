@@ -25,17 +25,6 @@ class ProductsRepository {
 		return data;
 	}
 
-	async updatePriceProduct(code: number, newPrice: number) {
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		const [data]: any[] = await connection.execute(`
-      UPDATE commerce.products
-      SET sales_price='${newPrice}'
-      WHERE commerce.products.code=${code}
-    `);
-
-		return data[0];
-	}
-
 	async getProductByCode(code: number): Promise<ProductDto | undefined> {
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		const [data]: any[] = await connection.execute(`
@@ -55,6 +44,19 @@ class ProductsRepository {
 
 		return packs[0];
 	}
+
+	async updatePriceProduct(code: number, newPrice: number) {
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		const [data]: any[] = await connection.execute(`
+      UPDATE commerce.products
+      SET sales_price='${newPrice}'
+      WHERE commerce.products.code=${code}
+    `);
+
+		return data[0];
+	}
+
+
 }
 
 export const productsRepository = new ProductsRepository();

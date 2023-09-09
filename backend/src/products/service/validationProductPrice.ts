@@ -61,7 +61,7 @@ class ValidationPriceService {
 	packUpdateRules(newPrice: number, productsList: IProduct[], pack?: PackDto) {
 		if (!pack) return [];
 		const messageList: string[] = [];
-		const productItem = productsList.find((item) => item.code === pack.product_id);
+		const productItem = productsList.find((item) => Number(item.code) === pack.product_id);
 
 		if (!productItem) {
 			messageList.push('O produto é um pack e não foi encontrada a atualização de preço do produto unitário');
@@ -70,7 +70,7 @@ class ValidationPriceService {
 
 		const checkPricePackBasedProductItem = productItem.price * pack.qty;
 
-		if (checkPricePackBasedProductItem !== newPrice) {
+		if (checkPricePackBasedProductItem !== Number(newPrice)) {
 			messageList.push(`Valor do produto unitário (código ${productItem.code}) contido no pack está incorreto.`);
 		}
 
